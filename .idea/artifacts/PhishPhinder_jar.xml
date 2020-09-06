@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="PhishPhinder:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/PhishPhinder_jar</output-path>
+    <root id="archive" name="PhishPhinder.jar">
+      <element id="module-output" name="PhishPhinder" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../../../Program Files/Java/javax.mail.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../../../Program Files/Java/tika-app-1.23.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../../../Program Files/Java/opencsv-5.0.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

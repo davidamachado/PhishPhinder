@@ -1,0 +1,5 @@
+debug = "true"
+emailServer = "imap.gmail.com"
+loginUsername = "SampleEmail@domain.com"
+loginPassword = "SamplePassword!"
+

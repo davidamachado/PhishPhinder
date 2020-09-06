@@ -1,0 +1,7 @@
+-Data for the overall program
+debug = true
+
+-Data for server being accessed
+emailServer = imap.gmail.com
+loginUsername = SampleEmail@domain.com
+loginPassword = SamplePassword!
