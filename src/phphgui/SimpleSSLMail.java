@@ -52,18 +52,6 @@ public class SimpleSSLMail {
     
     private static final String SMTP_AUTH_USER = loginUsername();
     private static final String SMTP_AUTH_PWD  = loginPassword();
-
-    /*public static void main(String[] args) {
-        
-        MimeMessage[] onlineArray = SimpleSSLMail.connect();
-        
-        SimpleSSLMail.save(onlineArray);
-        
-        MimeMessage[] offlineArray = SimpleSSLMail.load();
-        
-        Settings.println("Test Complete!");
-        System.exit(0);
-    }*/
     
     //Connects to the provided server and downloads all E-Mails w/ default info
 
@@ -115,7 +103,7 @@ public class SimpleSSLMail {
             store.connect(SMTP_HOST_NAME, SMTP_HOST_PORT, username, password);
             folder = store.getFolder("INBOX");
         } catch (MessagingException e) {
-            showMessageDialog(new Frame(), "Could not connect to G-Mail!");
+            showMessageDialog(new Frame(), "Could not connect!");
             return fail(e);
         }
         //Print the folder information if required
@@ -166,7 +154,7 @@ public class SimpleSSLMail {
             for(int x = 0; x < input.length; x++){
                 FileOutputStream output = new FileOutputStream(new File(("Email" + x + ".eml")));
                 input[x].writeTo(output);
-                println("Email" + x + ".eml output successfully");
+                println("Email" + x + ".eml output successfully!");
             }
         } catch (IOException | MessagingException e) {
             fail(e);
